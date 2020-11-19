@@ -1,0 +1,37 @@
+﻿<html>
+<head>
+<link rel="stylesheet" href="main.css">
+</head>
+<body class="body1">
+<meta charset="UTF-8">
+<div class="div1">
+<form action="file1.php"method="post">
+<h1>Ієрархічна кластеризація</h1>
+<h3>Додати країну до БД</h3>
+<p>Країна: <input type="text" title="Країна" name="country"required placeholder</p>
+<p>ВВП: <input type="text" title="ВВП"name="GDP"required placeholder></p>
+<p>Імпорт: <input type="text" title="Імпорт"name="import"required placeholder></p>
+<p>Експорт: <input type="text" title="Експорт"name="export"required placeholder></p>
+<p>Інфляція: <input type="text" title="Інфляція"name="inflation"required placeholder></p>
+<p>Безробіття: <input type="text" title="Безробіття"name="unemployment"required placeholder></p>
+<p>Промислове виробництво: <input type="text" title="Промислове виробництво"name="industry"required placeholder></p>
+<p>Відсоткова ставка: <input type="text" title="Відсоткова ставка"name="interestrate"required placeholder></p>
+<input type="submit" name="add" value="Додати"></p>
+</form>
+<form action="showtable.php"method="post">
+<input type="submit" name="showtable" value="Таблиця країн"></p>
+</form>
+<form action="classification.php"method="post">
+<p><select size="1" name="selector"required placeholder>
+    <option selected value>Виберіть країну</option>
+    <option value="0">Russia</option>
+    <option value="1">Great Britain</option>
+    <option value="2">Germany</option>
+    <option value="3">Italy</option>
+	 <option value="4">China</option>	
+   </select></p>
+<input type="submit" name="classification" value="Класифікувати"></p>
+</form>
+</div>
+</body>
+</html>
